@@ -1,0 +1,605 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'lora', serif;
+    margin: 5px;
+    color: #444;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    }
+.clearfix{
+    display: block;
+    text-decoration: none;
+    clear: both;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background: #006669;
+    color: white;
+    border: 10 px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.08em;
+
+}
+.btn:hover{
+    color: white !important;
+    background: #005255;
+}
+.btn-big{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+
+
+}
+/* Search */
+.text-input{
+padding: .7rem 1rem;
+display: block;
+width: 100%;
+border-radius: 5px;
+outline: none;
+color: #444;
+line-height: 1.5rem;
+font-family: 'lora', serif;
+border: 1px solid #e0e0e0;
+font-size: 1.2em;
+
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'lora',serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+.success{
+    color: rgb(24, 224, 24);
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;
+}
+.error{
+    color: rgb(126, 6, 6);
+    border: 1px solid #8b2f0a;
+    background: #f35959;
+}
+
+
+
+/* Navbar */
+header{
+    background: #008489;
+    height: 70px;
+}
+header *{
+    color: white;
+}
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    padding-top: 8px;
+}
+header .logo-text{
+    margin: 8px;
+    font-family: 'candal',serif;
+}
+header .logo-text span{
+    color: #571418;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.showing{
+max-height: 100em;
+
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li ul{
+position: absolute;
+top: 66px;
+right: 0px;
+width: 160px;
+display: none;
+z-index: 88888;
+}
+header ul li:hover ul{
+display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background-color: rgb(151, 151, 216);
+    color: #444;
+}
+header ul li ul li a.logout{
+    color: red;
+}
+header ul li ul li a:hover{
+    background: #d5d6d6;
+}
+
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background: #006669;
+    transition: 0.5s;
+}
+header .menu-toggle{
+    display: none;
+}
+/* Post Slider */
+.page-wrapper a:hover{
+color: #006669;
+}
+
+
+.post-slider{
+    position: relative;
+}
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: .8em;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: rgb(20, 10, 68);
+    }
+    .post-slider .prev{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        color: whitesmoke;
+        font-size: .7em;
+    cursor: pointer;
+    background-color: rgb(34, 10, 143);
+    }
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+
+    padding: 10px 0px 10px 0px;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .post-wrapper .post{
+    background: white;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0px 10px;
+    width: 300px;
+    height: 330px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* content */
+
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+
+}
+.main-content{
+    width: 70%;
+    float: left;
+
+}
+.main-content.single{
+background: white;
+padding: 20px 50px;
+font-size: 1.1em;
+border-radius: 5px;
+}
+.main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+
+}
+.content .main-content .post .read-more{
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+    border: 1px solid #005255;
+    background: transparent;
+    border-radius: 0px;
+    color: #005255 !important;
+
+}
+
+.content .main-content .post .read-more:hover{
+    background: #006669;
+    color: white !important;
+    transition: .25s;
+}
+
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.popular .post{
+
+margin-top: 10px;
+padding-top: 10px;
+}
+
+.popular .post img{
+height: 40px;
+width: 50px;
+float: left;
+margin-right: 10px;
+}
+
+.post-preview{
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+.recent-post-title{
+    margin: 20px;
+
+}
+
+
+
+.sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+    
+}
+.sidebar.single{
+   padding: 0px 10px; 
+}
+.sidebar .section{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    border: 1px solid gray;
+}
+.section-title{
+margin: 10px 0px 15px 0px;
+
+}
+.section .search{
+    margin-top: 80px;
+
+}
+.topics ul{
+margin: 0px;
+padding: 0px;
+list-style: none;
+border-top: 1px solid gray;
+}
+.topics ul li a{
+    border-bottom: 1px solid gray;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.3s;
+    
+}
+.topics ul li a:hover{
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+/* Authentication Pages */
+.auth-content {
+width: 30%;
+margin: 50px auto;
+padding: 20px;
+background: White;
+border-radius: 5px;
+
+}
+.auth-content .form-title{
+    text-align: center;
+}
+.auth-content form div {
+    margin-bottom: 10px;
+
+}
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a{
+    text-decoration: underline;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+    /* left: 0px; */
+    /* bottom: 0px; */
+    width: 100%;
+ }
+ .footer-content{
+
+    height: 350px;
+    display: flex;
+
+ }
+.footer-section{
+    flex: 1;
+    padding: 25px;
+
+}
+.footer .footer-content h1, .footer .footer-content h2{
+color: white;
+}
+.footer .footer-content .about h1 span{
+color: #05f7ff;
+}
+.footer .footer-content .about .contact span{
+display: block;
+font-size: 1.1em;
+margin-bottom: 8px;
+}
+.footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.footer .footer-content .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+.footer .footer-content .links ul a{
+display: block;
+margin-bottom: 10px;
+font-size: 1.2em;
+transition: all .3s;
+}
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.contact-input{
+background: #272727;
+color: #bebdbd;
+margin-bottom: 10px;
+line-height: 1.5rem;
+padding-top: .9rem 1.4rem;
+border: none;
+}
+.contact-input:focus{
+    background: #423e3e;
+}
+
+.contact-btn{
+    float: right;
+    font-size: 1.1em;
+    font-family:"lora", sans-serif;
+}
+.footer-bottom{
+background: #343a40;
+color: #2b70f1;
+height: 50px;
+text-align: center;
+position: absolute;
+left: 0px;
+width: 100%;
+margin-top: auto;
+bottom: 0px;
+padding-top: 5px;
+}
+
+
+
+/* Media Queries for Nav Bar */
+@media only screen and (max-width: 943px){
+.auth-content{
+    width: 60%;
+}
+
+
+
+
+    .content{
+        width: 100%;  
+    }
+    .content .main-content{
+        width: 100%;  
+        padding: 10px;
+    }
+    .content .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    .content .main-content .post{
+        width: 100%;
+    
+    }
+    .content .sidebar .section.search{
+        margin-top: 30px;
+    }
+    .footer-bottom{
+        /* position: absolute; */
+        left: 0px;
+        width: 100%;
+        margin-top: auto;
+        /* bottom: 0px;
+        padding-top: 5px; */
+        }
+
+        .footer {
+            height: auto;
+         }
+         .footer-content{
+        
+            height: auto;
+            flex-direction: column;
+         }
+         .footer .footer-content .contact-form{
+             padding-bottom: 90px;
+         }
+         .contact-btn{
+             width: 100%;
+         }
+
+
+}
+
+
+@media only screen and (max-width: 770px){
+    .auth-content{
+        width: 90%;
+    }
+    header {
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background: #0e94a0 ;
+        max-height: 0px;
+        overflow: hidden;
+
+    }
+    header ul li{
+        width: 100%;
+
+    }
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+        background: inherit;
+        }
+        header ul li ul li a{
+            padding: 10px;
+            background-color: #0e94a0;
+            color: white;
+            padding-left: 50px;
+        }
+        header ul li ul li a;hover{
+            background: #006669;
+        }
+        header ul li ul li a.logout{
+            color: red;
+        }
+        header .menu-toggle{
+            display: block;
+            font-size: 1.9em;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        header .logo{
+            margin-left: .5em;
+        } 
+        .post{
+            height: auto;
+
+        }
+        .post-image{
+            width: 100%;
+            /* height: auto; */
+            
+        }
+        .post-preview{
+            width: 100%;
+        }
+        .read-more{
+            position: static !important;
+            width: 100%;
+            display: block;
+            text-align: center;
+            background: gray !important;
+        }
+        .content .main-content .post .post-image {
+            width: 47%;
+            height: 45%;
+            float: left;
+            margin: 5px 110px;
+        }
+        .recent-post-title {
+            margin: auto;
+            text-align: center;
+        }
+
+}

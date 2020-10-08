@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+        <!-- <script src="https://kit.fontawesome.com/727d32ed03.js" crossorigin="anonymous"></script> -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+ <header>
+        <div class="logo">
+            <h1 class="logo-text">
+                <span class="first">UITS</span> News Flash
+                <!-- <span class="sec">News</span>
+                <span class="third">Flash</span> -->
+            </h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li> -->
+            <li><a href="#">
+                <i calss="fa fa-user"></i>
+                Guest
+                <i calss="fas fa-chevron-circle-down"></i>
+            </a>
+                <ul>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#" class="logout">Log Out</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </header>
+
+<div class="auth-content">
+    <form action="login.html" method="post">
+        <h2 class="form-title">Log In</h2>
+        <div>
+            <label>User Name</label>
+            <input type="text" name="username" class="text-input">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" class="text-input">
+        </div>
+        <div>
+            <button type="submit" name="login-btn"class="btn btn-big">Register</button>
+        </div>
+        <p>Not an Admin?  <a href="register.html" class="abc">Register Now</a></p>
+
+    </form>
+</div>
+
+ 
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
